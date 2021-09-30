@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tebak Kelereng</title>
+	<link rel="icon" href="./img/logo.png">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<noscript>Website ini memerlukan javascript untuk berjalan.</noscript>
+
+	<h1>Mari bermain <strong>Tebak Kelereng bersama ku!</strong></h1>
+	<p>Cara mainnya kamu tinggal menebak kelereng yang di sembunyikan robot berjumlah ganjil atau genap.</p>
+
+	<div class="status">
+		<span id="total-menang">Total kemenangan: 0</span>
+		<br>
+		<span id="status-kelereng">Kelereng mu: 10</span>
+		<br>
+		<span id="status-kelereng-robot">Kelereng robot: 10</span>		
+	</div>
+
+	<br>
+	<br>
+
+	<div class="input">
+		<input type="number" id="taruhan" max="10" min="1" placeholder="1-10" value="1">
+		<input id="tebakan" type="text" placeholder="ganjil/genap">
+		<button onclick="tebak()">Tebak!</button>		
+	</div>
+
+	<script src="./js/script.js"></script>
+</body>
+</html>	
