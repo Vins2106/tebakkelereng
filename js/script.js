@@ -82,7 +82,7 @@ function tebak() {
 
 		if (robot.kelereng <= 0) {
 			alert("Kamu menang!")
-			localStorage.setItem("menang", localStorage.getItem("menang") + 1 || 1)
+			localStorage.setItem("menang", parseInt(localStorage.getItem("menang")) + 1 || 1)
 			return location.reload()
 		}
 
